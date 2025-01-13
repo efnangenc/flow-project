@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
+
+body {
+    height: 100vh;
+    background: rgb(237, 218, 218);
+    background: linear-gradient(
+        113deg,
+        rgba(237, 218, 218, 1) 0%,
+        rgba(203, 133, 135, 1) 33%,
+        rgba(156, 173, 140, 1) 57%,
+        rgba(172, 169, 129, 1) 85%,
+        rgba(142, 139, 99, 0.846) 100%
+    );
+}
+nav {
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  .brand {
+    display: flex;
+    align-items: center;
+    img {
+      width: 40px;
+      margin-right: 20px;
+    }
+    h3{
+        font-family: "Crafty Girls", serif;
+        font-size: 30px;
+        font-weight: bold;
+        color:white;
+        margin:0;
+        margin-left:20px;
+    }
+  }
+}
+.usercard{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  & span{
+    font-family: "Kalam", serif;
+  font-weight: 300;
+  font-size:20px;
+    color:white;
+    &:hover {
+        text-decoration: underline;
+        // background-color: rgba(255, 255, 255, 0.24);
+      color: #aab99a;
+    //   box-shadow: 5px 5px 10px rgb(179, 179, 179);
+    }
+  }
+  img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  button {
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: 1px solid #bdbdbd;
+    background : transparent;
+    cursor: pointer;
+    transition: 0.7s;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.24);
+      color: #aab99a;
+      box-shadow: 5px 5px 10px rgb(179, 179, 179);
+    }
+  }
+}

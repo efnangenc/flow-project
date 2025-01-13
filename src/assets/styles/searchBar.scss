@@ -1,0 +1,37 @@
+.searchbar{
+    color: #727D73;
+    background-color:#AAB99A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul{
+        list-style : none;
+        display: flex;
+        gap:10px;
+        padding: 0;
+        li{
+            transition: .5s;
+            cursor: pointer;
+            &:hover{
+                text-decoration: underline;
+                color: #545c54;
+                scale:1.1;
+                font-weight: bold;
+            }
+        }
+    }
+    &-input{
+        input{
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid rgb(255, 255, 255);
+            &::placeholder{
+                color:#60a859;
+                font-weight: bold;
+            }
+            &:focus{
+                outline: 2px solid white;
+            }
+        }
+    }
+}
