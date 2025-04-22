@@ -25,6 +25,7 @@ body {
   font-style: normal;
   font-size: 13px;
   left: 77px;
+  top:220px
 }
 .font3 {
   position: absolute;
@@ -80,7 +81,12 @@ body {
   height: 100%;
 
   grid-area: 3 / 5 / 6 / 9;
-  background-color: #83885d;
+  background-color: rgba(106, 128, 116, 0.932);
+  img{
+    position: absolute;
+    top: 20px;
+    width: 300px;
+  }
 }
 
 .div2 {
@@ -88,14 +94,12 @@ body {
   background-image: url("https://i.pinimg.com/736x/bd/62/a3/bd62a313eb73df8b167720e194236a08.jpg");
   background-size: cover;
   grid-area: 6 / 5 / 9 / 9;
-  background-color: red;
 }
 
 .div3 {
   height: 760px;
   background-image: url("https://i.pinimg.com/736x/c7/61/5c/c7615c897f2fe33a3d8cfa357094f549.jpg");
   grid-area: 3 / 9 / 9 / 12;
-  background-color: red;
   background-size: cover;
 
   display: flex;

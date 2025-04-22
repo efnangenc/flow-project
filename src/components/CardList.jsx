@@ -4,15 +4,14 @@ import DataContext from "../context/DataContext";
 
 const CardList = () => {
   const {
-    flowers,
-    selectedCategory
+    state
   } = useContext(DataContext);
   return (
     <div className="card-list">
-      {flowers.map(
+      {state.flowers.map(
         (item) =>
           !item.isDeleted &&
-          (item.turu === selectedCategory || selectedCategory === "Tümü") && (
+          (item.turu === state.selectedCategory || state.selectedCategory === "Tümü") && (
             <Card
               key={item.id}
               item={item}

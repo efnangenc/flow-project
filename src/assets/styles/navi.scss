@@ -38,17 +38,8 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  & span{
-    font-family: "Kalam", serif;
-  font-weight: 300;
-  font-size:20px;
-    color:white;
-    &:hover {
-        text-decoration: underline;
-        // background-color: rgba(255, 255, 255, 0.24);
-      color: #aab99a;
-    //   box-shadow: 5px 5px 10px rgb(179, 179, 179);
-    }
+  & li{
+    // text-decoration: none;
   }
   img {
     width: 40px;

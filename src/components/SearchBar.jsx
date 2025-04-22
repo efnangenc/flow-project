@@ -4,14 +4,14 @@ import DataContext from "../context/DataContext";
 
 
 const SearchBar = () => {
-  const { setSelectedCategory, setSearch, categories} = useContext(DataContext)
-
+  const { state, dispatch} = useContext(DataContext)
+  const {categories} = state;
   return (
     <div className="searchbar">
       <ul>
         {categories.map((item) => (
           <li
-            onClick={(e) => setSelectedCategory(e.target.innerText)}
+            onClick={(e) => dispatch({type:"selectedCategory", payload:e.target.innerText})}
             key={item.id}
           >
             {item.categoryName}{" "}
@@ -20,11 +20,10 @@ const SearchBar = () => {
       </ul>
       <div className="searchbar-input">
         <input
-          onChange={(e) => setSearch(e.target.value)}
+          onChange={(e) => dispatch({type:"search", payload:e.target.value})}
           type="text"
           placeholder="Ara.."
         />
-        ARA
       </div>
     </div>
   );

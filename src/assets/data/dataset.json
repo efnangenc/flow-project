@@ -31,14 +31,14 @@
       "aciklama": "Sümbül, bahar aylarında açan renkli ve hoş kokulu çiçeklere sahip bir bitkidir. Çiçeklerinin mor, mavi, beyaz veya pembe renkleri vardır."
     },
     {
-      "id": "4",
-      "foto": "https://i.pinimg.com/736x/c8/2c/3a/c82c3acdae1199e96692e32589a004c9.jpg",
       "bitkiAdi": "Müge Çiçeği",
       "latinBitkiAdi": "Convallaria majalis",
       "turu": "Çok yıllık bitki",
       "anlami": "Saflık ve mutluluk",
       "iklim": "Ilıman iklim",
-      "aciklama": "Müge çiçeği, beyaz çan şeklinde çiçekleriyle dikkat çeker ve bahar aylarında çiçek açar. Genellikle gölge alanlarda yetişir."
+      "aciklama": "Müge çiçeği, beyaz çan şeklinde çiçekleriyle dikkat çeker ve bahar aylarında çiçek açar. Genellikle gölge alanlarda yetişir.",
+      "foto": "https://i.pinimg.com/736x/c8/2c/3a/c82c3acdae1199e96692e32589a004c9.jpg",
+      "id": "4"
     },
     {
       "id": "5",
@@ -85,7 +85,7 @@
       "latinBitkiAdi": "Fragaria vesca",
       "turu": "Meyve",
       "anlami": "Sevgi, saflık ve sadelik",
-      "iklim": "Ilıman iklim44",
+      "iklim": "Ilıman iklim",
       "aciklama": "Çilek, gülgiller (Rosaceae) ailesine ait bir bitkidir ve hem meyvesi hem de çiçeği ile dikkat çeker. Beyaz, beş yapraklı küçük çiçekleri ilkbahar ve yaz aylarında açar. Meyveleri tatlı ve aromatik olup genellikle taze tüketilir.",
       "foto": "https://i.pinimg.com/736x/dd/f7/b4/ddf7b4e8f4d8a31e33b601e3adc9ccac.jpg",
       "id": "9"
@@ -93,7 +93,7 @@
     {
       "bitkiAdi": "Lale",
       "latinBitkiAdi": "ddd444",
-      "turu": "dd",
+      "turu": "Soğanlı bitki",
       "anlami": "dd",
       "iklim": "dd33",
       "aciklama": "dd",
@@ -112,14 +112,14 @@
       "isDeleted": true
     },
     {
-      "id": "12",
-      "bitkiAdi": "gfdf",
+      "bitkiAdi": "dut",
       "latinBitkiAdi": "dgfsd",
       "turu": "Meyve",
       "anlami": "ghdfgd",
       "iklim": "hgdfgsdf",
       "aciklama": "ghdfgsd",
-      "foto": ""
+      "foto": "",
+      "id": "12"
     },
     {
       "id": "13",
@@ -129,7 +129,52 @@
       "anlami": "gfdv",
       "iklim": "ngfdv",
       "aciklama": "gfnzdvs<cs",
-      "foto": ""
+      "foto": "",
+      "isDeleted": true
+    },
+    {
+      "bitkiAdi": "rfew4444",
+      "latinBitkiAdi": "grfew",
+      "turu": "Su bitkisi",
+      "anlami": "rfedw",
+      "iklim": "rfedw",
+      "aciklama": "rew",
+      "foto": "",
+      "id": "14",
+      "isDeleted": true
+    },
+    {
+      "id": "15",
+      "bitkiAdi": "gfd",
+      "latinBitkiAdi": "gdfsd",
+      "turu": "Meyve",
+      "anlami": "gfsds",
+      "iklim": "gfds",
+      "aciklama": "gfdss",
+      "foto": "",
+      "isDeleted": true
+    },
+    {
+      "id": "16",
+      "bitkiAdi": "hghcfgxdzsd",
+      "latinBitkiAdi": "hgfgdsd",
+      "turu": "Çok yıllık bitki",
+      "anlami": "hjfds",
+      "iklim": "hfgd",
+      "aciklama": "ghfhg",
+      "foto": "",
+      "isDeleted": true
+    },
+    {
+      "bitkiAdi": "dfg",
+      "latinBitkiAdi": "fgdfg",
+      "turu": "Diğer",
+      "anlami": "dfg",
+      "iklim": "gfdg",
+      "aciklama": "fdgd",
+      "foto": "",
+      "id": "17",
+      "isDeleted": true
     }
   ],
   "categories": [

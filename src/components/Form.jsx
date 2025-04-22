@@ -2,40 +2,23 @@ import React, { useContext } from "react";
 import "../assets/styles/form.scss";
 import DataContext from "../context/DataContext";
 const Form = () => {
-  const {
-    selectedFlower,
-    handleSubmit,
-    bitkiAdi,
-    latinBitkiAdi,
-    turu,
-    anlami,
-    iklim,
-    aciklama,
-    foto,
-    setBitkiAdi,
-    setLatinBitkiAdi,
-    setTuru,
-    setAnlami,
-    setIklim,
-    setAciklama,
-    setFoto,
-  } = useContext(DataContext);
+  const { handleSubmit, state, dispatch } = useContext(DataContext);
+
+  const { bitkiAdi, latinBitkiAdi, turu, anlami, iklim, aciklama, foto } =
+    state;
 
   return (
     <div className="allForm">
-      <div className="background">
-        <img
-          src="https://i.pinimg.com/736x/3f/2f/82/3f2f82e9757694192f49d05a46d79b8d.jpg"
-          alt="Background"
-        />
-      </div>
-      <div  className="parent">
+      
+      <div className="parent">
         <div className="div1">
-          <div>
-            <img src="" />
-          </div>
-          <p className="font">FLOWW</p>
-          <p className="font2">Botanik kayıt sistemi: Ekleyin, düzenleyin, güncelleyin, yönetin... </p>
+          <img className="Logo"
+          src="src\assets\img\ff-removebg-preview.png"
+          alt="flora"
+        />
+          <p className="font2">
+            Botanik kayıt sistemi: Ekleyin, düzenleyin, güncelleyin, yönetin...{" "}
+          </p>
           <p className="font4">
             React ile modern <strong>CRUD</strong> çözümleri.
           </p>
@@ -51,7 +34,9 @@ const Form = () => {
                   id="name"
                   name="name"
                   placeholder="Bitki Adı"
-                  onChange={(e) => setBitkiAdi(e.target.value)}
+                  onChange={(e) =>
+                    dispatch({ type: "BitkiAdi", payload: e.target.value })
+                  }
                 />
               </div>
               <div className="form-group">
@@ -62,15 +47,12 @@ const Form = () => {
                   id="latinName"
                   name="latinName"
                   placeholder="Latince Adı"
-                  onChange={(e) => setLatinBitkiAdi(e.target.value)}
+                  onChange={(e) =>  dispatch({ type: "LatinBitkiAdi", payload: e.target.value })}
                 />
               </div>
               <div className="form-group">
                 {/* <!-- <label for="type">Türü</label> --> */}
-                <select
-                  value={turu}
-                  onChange={(e) => setTuru(e.target.value)}
-                >
+                <select value={turu} onChange={(e) =>  dispatch({ type: "Turu", payload: e.target.value })}>
                   <option>Seçiniz</option>
                   <option>Çok yıllık bitki</option>
                   <option>Su bitkisi</option>
@@ -89,7 +71,7 @@ const Form = () => {
                   id="meaning"
                   name="meaning"
                   placeholder="Anlamı"
-                  onChange={(e) => setAnlami(e.target.value)}
+                  onChange={(e) =>  dispatch({ type: "Anlami", payload: e.target.value })}
                 />
               </div>
               <div className="form-group">
@@ -100,7 +82,7 @@ const Form = () => {
                   id="climate"
                   name="climate"
                   placeholder="Yetiştiği İklim"
-                  onChange={(e) => setIklim(e.target.value)}
+                  onChange={(e) =>  dispatch({ type: "Iklim", payload: e.target.value })}
                 />
               </div>
               <div className="form-group">
@@ -111,7 +93,7 @@ const Form = () => {
                   id="description"
                   name="description"
                   placeholder="Açıklama"
-                  onChange={(e) => setAciklama(e.target.value)}
+                  onChange={(e) =>  dispatch({ type: "Aciklama", payload: e.target.value })}
                 />
               </div>
               <div className="form-group">
@@ -122,7 +104,7 @@ const Form = () => {
                   id="description"
                   name="description"
                   placeholder="Foto"
-                  onChange={(e) => setFoto(e.target.value)}
+                  onChange={(e) =>  dispatch({ type: "Foto", payload: e.target.value })}
                 />
               </div>
               <div className="form-group">
@@ -137,7 +119,7 @@ const Form = () => {
                   }
                   className="button"
                   type="submit"
-                  value={selectedFlower ? "Düzenle" : "Ekle"}
+                  value={state.selectedFlower ? "Düzenle" : "Ekle"}
                 />
               </div>
             </form>
